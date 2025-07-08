@@ -1,0 +1,47 @@
+{
+  "name": "mqtt-explore",
+  "version": "1.0.0",
+  "description": "Real-time, AI-powered MQTT network discovery and visualization tool for IoT engineers, SCADA teams, and industrial cybersecurity analysts",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "start": "npm run server:start",
+    "server:dev": "cd server && npm run dev",
+    "server:start": "cd server && npm start",
+    "client:dev": "cd client && npm run dev",
+    "client:build": "cd client && npm run build",
+    "client:preview": "cd client && npm run preview",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install --legacy-peer-deps",
+    "build": "npm run client:build",
+    "test": "cd server && npm test",
+    "lint": "cd server && npm run lint && cd ../client && npm run lint"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "mqtt",
+    "iot",
+    "sparkplug",
+    "network-discovery",
+    "websocket",
+    "real-time",
+    "ai",
+    "visualization",
+    "industrial",
+    "scada"
+  ],
+  "author": "MQTT Explore Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mqtt-explore/mqtt-explore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mqtt-explore/mqtt-explore/issues"
+  },
+  "homepage": "https://github.com/mqtt-explore/mqtt-explore#readme"
+}
